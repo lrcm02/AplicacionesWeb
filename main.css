@@ -1,0 +1,45 @@
+.aside{
+	border: 2px green solid;
+	text-align: center;
+	grid-area: aside;
+}
+
+.footer{
+	border: yellow;
+	text-align: center;
+	grid-area: footer;
+}
+
+.banner{
+	background-color: #365475;
+	font-size: 3vw;
+	text-align: center;
+	border: 1px solid black;
+	grid-area: banner;
+}
+
+.menu{
+	background-color: #7180F7;
+	color: black;
+	font-size: 1.5vw;
+	text-align: center;
+	grid-area: menu;
+}
+
+.container{
+	display: grid;
+	background-color: darkcyan;
+	grid-template-areas: 'banner banner banner banner banner banner'
+						 'menu menu menu menu menu menu'
+						 'aside contenido contenido contenido contenido contenido'
+						 'footer footer footer footer footer footer';
+}
+
+.grid-item{
+	border: solid black 2px;
+}
+
+#headers {
+	text-align: center;	
+	font-size: 2vw;
+}

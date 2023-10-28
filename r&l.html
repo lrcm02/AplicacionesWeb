@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<title> Registro e inicio de sesion </title>
+	<link rel = "stylesheet" href= "r&l.css">
+	<script src = "./r&l.js"> </script>
+</head>
+
+<body>
+	<form action = "#" id = "signup">
+		<p> Registro </p> 
+		<label for = "usuarioSignup"> Usuario: </label>
+		<input type = "text" id = "usuarioSignup">
+		<label for = "contraSignup"> Contrasena: </label>
+		<input type = "password" id = "contraSignup">
+		
+	</form>
+	
+	<form action = "#" id = "login">
+		<p> Inicio de sesion </p>
+		<label for = "usuarioLogin"> Usuario: </label>
+		<input type = "text" id = "usuarioLogin">
+		<label for = "contraLogin"> Contrasena: </label>
+		<input type = "password" id = "contraLogin">
+	
+	</form>
+	
+	<div id= "Registrarse">
+		<button id = "btn1" onclick = "signup()"> Registrarse </button>
+		<p id = "p1"> </p>
+	</div>
+	
+	<div id= "IniciarSesion">
+		<button id = "btn2" onclick = "login()"> Iniciar sesion </button>
+		<p id = "p3"> </p>
+	</div>
+</body>
+</html>

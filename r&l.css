@@ -1,0 +1,42 @@
+*{
+	font-size: 2vw;
+}
+
+body{
+	display: inline-flex;
+}
+#signup{
+	background-color: darkblue;
+	color: white;
+	width: 25%;
+	padding: 5px;
+	border: black solid 2px;
+}
+
+#signup input[type = text]{
+	width: 100%;
+}
+
+#Registrarse{
+	width: 25%;
+	background-color: darkblue;
+	color: white;
+}
+
+#login{
+	background-color: darkred;
+	color: white;
+	width: 25%;
+	padding: 5px;
+	border: black solid 2px;
+}
+
+#login input[type = text]{
+	width: 100%;
+}
+
+#IniciarSesion{
+	width: 100%;
+	background-color: darkred;
+	color: white;
+}
