@@ -17,6 +17,13 @@ body {
     text-align: center;
 }
 
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
 header{
     background-color: #153d45;
     color: white;
@@ -68,6 +75,6 @@ header{
     border: solid black 1px;
 }
 
-#imgP{
+#uErreEle{
     width: 100%;
 }

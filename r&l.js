@@ -11,10 +11,18 @@ function signup(){
 	
 	auxU = usuarioSignup.value;
 	auxC = contraSignup.value;
+
+	if (auxC == "" || auxU == ""){
+		alert("Campos vacios");
+	}
 	
-	if(auxU == usuarioSignup.value && auxC == contraSignup.value){
+	if(auxU == usuarioSignup.value && auxC == contraSignup.value && auxU != "" && auxC != ""){
+		storeData();
 		usuarioSignup.value = '';
         contraSignup.value = '';
+        edad.value = '';
+        genero.value = '';
+        pais.value = '';
 		document.getElementById('p1').innerHTML = "Registro exitoso";
 	}
 	
@@ -31,8 +39,10 @@ function login(){
 	if (auxU == usuarioLogin.value && auxC != contraLogin.value){
 		alert("Error: Contrasena incorrecta");
 	}
-	if (usuarioLogin.value == auxU && auxC == contraLogin.value){
-		document.getElementById('p3').innerHTML = "Cerrando esta ventana...";
+	if (usuarioLogin.value == "" || contraLogin.value == ""){
+		alert("Campos vacios");
+	}
+	if (usuarioLogin.value == auxU && auxC == contraLogin.value && auxU != "" && auxC != ""){
 		usuarioLogin.value = '';
         contraLogin.value = '';
 		alert("Iniciando sesion...");
@@ -40,4 +50,18 @@ function login(){
 		window.close();
 	}
 		
+}
+
+function storeData(){
+	usernameString = JSON.stringify(usuarioSignup.value);
+    window.localStorage.setItem("nuevoNombre", usernameString);
+
+    ageString = JSON.stringify(edad.value);
+	window.localStorage.setItem("nuevaEdad", ageString);
+
+	genderString = JSON.stringify(genero.value);
+	window.localStorage.setItem("nuevoGenero", genderString);
+
+	countryString = JSON.stringify(pais.value);
+	window.localStorage.setItem("nuevoPais", countryString);
 }

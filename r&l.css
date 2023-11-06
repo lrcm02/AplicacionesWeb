@@ -1,42 +1,87 @@
-*{
-	font-size: 2vw;
+/* Reset some default styles */
+body, h1, p, label, input, button {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	display: inline-flex;
-}
-#signup{
-	background-color: darkblue;
-	color: white;
-	width: 25%;
-	padding: 5px;
-	border: black solid 2px;
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-#signup input[type = text]{
-	width: 100%;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-#Registrarse{
-	width: 25%;
-	background-color: darkblue;
-	color: white;
+form {
+  margin: 20px 0;
 }
 
-#login{
-	background-color: darkred;
-	color: white;
-	width: 25%;
-	padding: 5px;
-	border: black solid 2px;
+p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-#login input[type = text]{
-	width: 100%;
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #555;
 }
 
-#IniciarSesion{
-	width: 100%;
-	background-color: darkred;
-	color: white;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#signup, #login {
+  display: inline-block;
+  width: 45%;
+  margin: 0 2.5%;
+  text-align: left;
+}
+
+#signup {
+  float: left;
+}
+
+#login {
+  float: right;
+}
+
+#Registrarse, #IniciarSesion {
+  margin-top: 20px;
+}
+
+#p1 {
+  font-weight: bold;
+  color: #FF3333;
 }
