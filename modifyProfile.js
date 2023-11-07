@@ -46,28 +46,6 @@ function saveChanges(){
 
 	countryString = JSON.stringify(viejoPais.innerHTML);
 	window.localStorage.setItem("nuevoPais", countryString);
-	
-	/**
-	nombreString2 = localStorage.getItem('nuevoNombre'); 
-	username2 = JSON.parse(nombreString2);
-	console.log(username2);
-	
-	urlString2 = localStorage.getItem('nuevoUrl'); 
-	imgUrl2 = JSON.parse(urlString2);
-	console.log(imgUrl2);
-	
-	edadString2 = localStorage.getItem('nuevaEdad');
-	age2 = JSON.parse(edadString2);
-	console.log(age2);
-	
-	generoString2 = localStorage.getItem('nuevoGenero');
-	gender2 = JSON.parse(generoString2);
-	console.log(gender2);
-	
-	paisString2 =  localStorage.getItem('nuevoPais');
-	country2 = JSON.parse(paisString2);
-	console.log(country2);
-	**/
 }
 
 function exit(){
